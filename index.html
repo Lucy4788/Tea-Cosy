@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Cosy</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/font/flaticon.css" type="text/css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2664ede48e.js" crossorigin="anonymous">
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon"> <!--Flavicon creation-->
+    <!--<script src="./JS/teacosy.js"></script>-->
+</head>
+<body>
+    <header>
+        <nav class="desktop">
+            <img src="./images/Logo.png" alt="Tea Cosy"/>
+            <ul>
+                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#location">Locations</a></li>
+                <li><a href="#products">Featured products</a></li>
+                <li><a href="#mission">About</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <img src="./images/Logo.png" alt="Tea Cosy"/>
+            <i class="fas fa-list-ul"></i>
+        </nav>
+    </header>
+    <main>
+        <div id="mission">
+            <div class="details">
+                <p>There’s nothing nicer on a chilly day than a soothing cup of herbal tea. But besides being a tasty, warming, caffeine-free pick-me-up, herbal tea has lots of wonderful health benefits. From soothing a troubled tummy to easing insomnia and calming a troubled mind, herbs have all sorts of healing powers.</p>
+                <button>Join Us</button>
+                <p>At <strong><em>Tea Cosy</em></strong>, we promise to serve only handpicked, artisanally curated, sustainable, fair trade, organic teas to our customers. Come to us to experience and detox your day with our wide choice of herbal teas☕</p>        
+            </div>
+        </div>
+        <div id="products">
+            <h1>Teas of the month</h1>
+            <p>Best selling teas voted by our beloved customers</p>
+            <div class="flexbox">
+                <div class="tea a">
+                    <img src="./images/detox tea.jpg" alt="detox tea"/>
+                    <p>Roobios Detox Tea</p>
+                </div>
+                <div class ="tea b">
+                    <img src="./images/herbal tea.jpg" alt="rose bud tea"/>
+                    <p>Rose Buds Iced Tea</p>
+                </div>
+                <div class="tea c">
+                    <img src ="./images/mixed hearbal tea.png" alt="Ginger berry tea"/>
+                    <p>Ginger Berry Tea</p>
+                </div>
+                <div class="tea d">
+                    <img src="./images/vibrant health tea.jpg" alt="Nettle root tea"/>
+                    <p>Nettle Root Tea</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="location">
+            <h1>Location</h1>
+            <div class="flex-container">
+                <div class="shop">
+                    <h2>Downtown</h2>
+                    <ul>
+                        <li>384 West 4th St</li>
+                        <li>Suite 108</li>
+                        <li>Portland, Maine</li>
+                    </ul>
+                    <p>10am - 10pm | Mon - Sun</p>
+                </div>
+                <div class="shop">
+                    <h2>East Bayside</h2>
+                    <ul>
+                        <li>234BT South East</li>
+                        <li>(Northwest Corner)</li>
+                        <li>Portland, Maine</li>
+                    </ul>
+                    <p>12am - 10pm | Mon - Sun</p>
+                </div>
+                <div class="shop">
+                    <h2>Oakdale</h2>
+                    <ul>
+                        <li>515 Crescent Avenue</li>
+                        <li>Second Avenue</li>
+                        <li>Portland, Maine</li>
+                    </ul>
+                    <p>9am - 9pm | Mon - Sun</p>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h2>The Tea Cosy</h2>
+            <p class="email"><a href="mailto:info@theteacosy.com">info@theteacosy.com</a></p>
+            <p class="phone">917-555-8904</p>
+            <div class="media">
+                <ul>
+                    <li><i class="flaticon-facebook"></i></li>
+                    <li><i class="flaticon-tripadvisor"></i></li>
+                    <li><i class="flaticon-instagram"></i></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="extra">
+            <p>&copy TheTeaCosy</p>
+            <p class="coder"><i class="flaticon-coding"></i> Trang Vo</p>
+        </div>
+    </footer>
+    <script>
+        function signUp(){
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+    
+        if (name.length > 0 && email.length > 0){
+            alert(`Thank you ${name}, we'll be in touch ❤`);
+        } else {
+            alert (`Thank you, hope you enjoy your tea time with us 😊`);
+        }
+    }
+    let signUpButton = document.querySelector("button");
+    signUpButton.addEventListener("click", signUp);
+    </script>
+</body>
+</html>
